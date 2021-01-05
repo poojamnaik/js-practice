@@ -1,0 +1,30 @@
+function calculateCoins(int remainingAmount, int coinIndex, int[] coins, int[] currentCoins, Set result) {
+
+    if(remainingAmount === 0) {
+        Array.sort(currentCoins)
+        result.push(currentCoins)
+    }
+
+    if(remainingAmount < coins[coinIndex]) {
+        // invalid case
+        return;
+    }
+
+    for(let i = coinIndex; i < coins.length; i++) {
+        cointValue = coins[coinIndex]
+        currentCoins = currentCoins.push(cointValue)
+        calculateCoins(remainingAmount - cointValue, i, coins, currentCoins)
+    }
+}
+
+function main() {
+    let result = new Set()
+    let amount = 4
+    let coins = [1,2,3]
+
+    for(let i = 0; i < coins.length; i++) {
+        calculateCoins(amount, i, coins, [])
+    }
+
+    console.log(result)
+}

@@ -1,0 +1,26 @@
+The primary operations that generally form a part of the LinkedList class are listed below:
+
+insertAtTail(data) - inserts an element at the end of the linked list
+insertAtHead(data) - inserts an element at the start/head of the linked list
+delete(data) - deletes an element with your specified value from the linked list
+deleteAtHead() - deletes the first element of the list
+deleteAtTail() - deletes the first element of the list
+search(data) - searches for an element in the linked list
+isEmpty() - returns true if the linked list is empty
+printList - print all the node value
+getHead() - print node data separate by ' -> '
+
+
+del or serach by value - O(n)
+
+Difference betweem Array and LinkedList ?
+1. Array elements store in a contiguous memory location.
+    Linked list elements can be stored anywhere in the memory or randomly stored.
+2. Array works with Static memory.
+    Linked List works with dyanamic memory
+3. array insertion and deletion takes more time
+   linkedList insertion deletion takes less time
+4. accessing element in an array is faster
+    accessing element in an LL is slower
+5. complie time memory allocated 
+    dyanaic time meemory allocation

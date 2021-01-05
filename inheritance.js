@@ -75,14 +75,12 @@ Refer code to understand illustrations below:
 ** Searches for property in self and then fetches from parent **
     `);
   console.log('snake.planet:: ', snake.planet); 
-
   console.log(`
 --------------------------------------------------
 ** If the property of teh parent is changed after setting proto child will pick parent proto **
 `);
     creature.planet = 'planetEarth';
     console.log('snake.planet:: ', snake.planet); 
-
 
   console.log(`
   --------------------------------------------------
